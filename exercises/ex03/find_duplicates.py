@@ -10,7 +10,7 @@ while i < len(word):
     j: int = i + 1
     while j < len(word): 
         if word[j] == char: 
-            dup: bool = True
-        j: int = j + 1 
-    i: int = i + 1
+            dup = True
+        j = j + 1 
+    i = i + 1
 print("Found duplicate: " + str(dup)) 
