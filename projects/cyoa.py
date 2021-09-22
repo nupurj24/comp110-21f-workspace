@@ -85,7 +85,6 @@ def main() -> None:
                         print(f"Goodbye {player}! Thank you so much for playing! You earned {points} points! Amazing job!")
 
 
-# def main() -> None: 
 if __name__ == "__main__":
     main()
 
