@@ -55,6 +55,7 @@ def tarot() -> int:
 
 
 def funnel_cake(points: int) -> int:
+    """Funnel Cake Stand"""
     funnel_points: int = 0
     bogo: str = input(f"Good News! You received a buy one get one free funnel cake coupon upon your ticket purchase, {player}! Would you like to... one: Keep the free funnel cake for yourself. or two: Give it to the person in line behind you. Type the option you are selecting in lowercase with no spaces or colons please! ")
     if bogo == "one":
