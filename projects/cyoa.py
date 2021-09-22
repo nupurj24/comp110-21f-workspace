@@ -47,8 +47,8 @@ def tarot() -> int:
                 print("Four of Wands Tarot Card! This card has to do with success and joy!")
             else: 
                 if SECRET == 4: 
-                    print("The Sun Tarot Card! This card relates to joy, happiness, and triumph!")
-    print(f"Hmmm, {player} I wonder what that could mean for you. \U0001F914")
+                    print("Sun Tarot Card! This card relates to joy, happiness, and triumph!")
+    print(f"Hmmm, {player}, I wonder what that could mean for you. \U0001F914")
     global points
     points = points + 10
     return points
