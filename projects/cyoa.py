@@ -19,7 +19,7 @@ def greet() -> None:
 
 
 def ferris_wheel() -> int:
-    """Ferris Wheel Choices"""
+    """Ferris Wheel Choices!"""
     global points 
     print(f"Welcome to the Ferris Wheel ride, {player}! Unfortunately, there is a line for this ride for 30 minutes.")
     choice: str = input(f"{player}, Would you like to... one: Wait in line for the ride. or two: choose another option? Type the option you are selecting in lowercase with no spaces or colons please! ")
@@ -34,7 +34,7 @@ def ferris_wheel() -> int:
 
 
 def tarot() -> int:
-    """Tarot Card Booth"""
+    """Tarot Card Booth!"""
     print("You picked the ... ")
     SECRET: int = int(randint(1, 4))
     if SECRET == 1: 
@@ -55,7 +55,7 @@ def tarot() -> int:
 
 
 def funnel_cake(points: int) -> int:
-    """Funnel Cake Stand"""
+    """Funnel Cake Stand!"""
     funnel_points: int = 0
     bogo: str = input(f"Good News! You received a buy one get one free funnel cake coupon upon your ticket purchase, {player}! Would you like to... one: Keep the free funnel cake for yourself. or two: Give it to the person in line behind you. Type the option you are selecting in lowercase with no spaces or colons please! ")
     if bogo == "one":
@@ -67,6 +67,7 @@ def funnel_cake(points: int) -> int:
 
 
 def main() -> None:
+    """Main."""
     greet()
     global points
     points = 0 
