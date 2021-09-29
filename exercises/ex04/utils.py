@@ -14,7 +14,7 @@ def main() -> None:
     list_1: list[int] = [2, 2, 2]
     list_2: list[int] = [2, 1, 2]
     print(is_equal(list_1, list_2))
-    input: list[int] = [8, 7, 6]
+    input: list[int] = [-3, -1, -9]
     print(max(input))
 
 
@@ -47,7 +47,7 @@ def max(input: list[int]) -> int:
     if len(input) == 0:
         raise ValueError("max() arg is an empty List") 
     i: int = 0
-    max: int = 0
+    max: int = input[0]
     while i < len(input):
         if input[i] > max:
             max = input[i]
