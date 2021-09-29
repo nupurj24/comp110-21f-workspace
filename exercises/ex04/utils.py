@@ -7,6 +7,7 @@ __author__ = "730391424"
 
 
 def main() -> None:
+    """Main."""
     numbers: list[int] = [1, 1, 1, 1]
     match: int = 1
     print(all(numbers, match))
@@ -42,6 +43,7 @@ def is_equal(list_1: list[int], list_2: list[int]) -> bool:
 
 
 def max(input: list[int]) -> int:
+    """Which number is the maximum?"""
     if len(input) == 0:
         raise ValueError("max() arg is an empty List") 
     i: int = 0
