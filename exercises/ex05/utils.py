@@ -40,7 +40,7 @@ def sub(a_list: list[int], start: int, end: int) -> list[int]:
         return new_list
     if start < 0:
         start = 0
-    if end > len(a_list):
+    if end > len(a_list) - 1:
         end = len(a_list) - 1
     i: int = start 
     while i < end:

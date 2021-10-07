@@ -45,7 +45,7 @@ def test_sub_end_is_greater_than_length_of_list() -> None:
     a_list: list[int] = [1, 2, 3, 4]
     start: int = 1
     end: int = 4
-    assert sub(a_list, start, end) == [2, 3, 4]
+    assert sub(a_list, start, end) == [2, 3]
 
 
 def test_concat_lists_are_empty() -> None:
