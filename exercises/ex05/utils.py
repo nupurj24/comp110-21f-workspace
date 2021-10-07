@@ -19,6 +19,7 @@ def main() -> None:
 
 
 def only_evens(input_list: list[int]) -> list[int]:
+    """A function that returns only the even numbers in a list."""
     i: int = 0
     evens_list: list[int] = []
     while i < len(input_list):
@@ -29,6 +30,7 @@ def only_evens(input_list: list[int]) -> list[int]:
 
 
 def sub(a_list: list[int], start: int, end: int) -> list[int]:
+    """A function that gives a subset of a list."""
     new_list: list[int] = []
     if start > len(a_list):
         return new_list
@@ -48,6 +50,7 @@ def sub(a_list: list[int], start: int, end: int) -> list[int]:
 
 
 def concat(list_1: list[int], list_2: list[int]) -> list[int]:
+    """A function that concatenates two lists."""
     concat_list: list[int] = list_1
     i: int = 0 
     while i < len(list_2):
