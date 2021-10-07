@@ -40,12 +40,19 @@ def sub(a_list: list[int], start: int, end: int) -> list[int]:
         return new_list
     if start < 0:
         start = 0
-    if end > len(a_list) - 1:
-        end = len(a_list) - 1
     i: int = start 
     while i < end:
         new_list.append(a_list[i])
         i += 1
+    if end > len(a_list):
+        end = len(a_list) - 1
+        while i <= end:
+            new_list.append(a_list[i])
+            i += 1
+    else:
+        while i < end:
+            new_list.append(a_list[i])
+            i += 1
     return new_list
 
 
