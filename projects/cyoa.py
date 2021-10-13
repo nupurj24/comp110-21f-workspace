@@ -18,7 +18,7 @@ def greet() -> None:
     print(f"Welcome to the game, {player}!") 
 
 
-def ferris_wheel() -> int:
+def ferris_wheel() -> None:
     """Ferris Wheel Choices!"""
     global points 
     print(f"Welcome to the Ferris Wheel ride, {player}! Unfortunately, there is a line for this ride for 30 minutes.")
@@ -30,10 +30,9 @@ def ferris_wheel() -> int:
         if choice == "two":
             print(f"That makes sense, {player}! Time is of the essence!")
             points = points + 5
-    return points
 
 
-def tarot() -> int:
+def tarot() -> None:
     """Tarot Card Booth!"""
     print("You picked the ... ")
     SECRET: int = int(randint(1, 4))
@@ -51,7 +50,6 @@ def tarot() -> int:
     print(f"Hmmm, {player}, I wonder what that could mean for you. \U0001F914")
     global points
     points = points + 10
-    return points
 
 
 def funnel_cake(points: int) -> int:
