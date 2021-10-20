@@ -18,6 +18,7 @@ def main() -> None:
 
 
 def invert(original_dict: dict[str, str]) -> dict[str, str]:
+    """A function that inverts a dictionary."""
     inverted_dict: dict[str, str] = {}
     for key in original_dict:
         inverted_dict[original_dict[key]] = key
@@ -27,6 +28,7 @@ def invert(original_dict: dict[str, str]) -> dict[str, str]:
 
 
 def favorite_color(colors: dict[str, str]) -> str:
+    """A function that returns the most popular favorite color."""
     favorite_color: str = ""
     colors_dict: dict[str, int] = {}
     for key in colors:
@@ -43,6 +45,7 @@ def favorite_color(colors: dict[str, str]) -> str:
 
 
 def count(list0: list[str]) -> dict[str, int]:
+    """A function that keeps score."""
     count_dict: dict[str, int] = {}
     for item in list0:
         count_dict[item] = 0
