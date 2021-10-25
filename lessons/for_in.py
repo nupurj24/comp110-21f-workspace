@@ -13,5 +13,4 @@ while i < len(names):
 print("for...in output")
 # the following for...in loop is the same as the while loop above
 for name in names:
-    print(name)
- 
+    print(name) 
