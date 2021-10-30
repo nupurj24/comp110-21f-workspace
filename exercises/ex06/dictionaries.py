@@ -21,9 +21,10 @@ def invert(original_dict: dict[str, str]) -> dict[str, str]:
     """A function that inverts a dictionary."""
     inverted_dict: dict[str, str] = {}
     for key in original_dict:
-        inverted_dict[original_dict[key]] = key
-        if original_dict[key] in original_dict:
+        if original_dict[key] in inverted_dict:
             raise KeyError("You can't have duplicate keys!")
+        else:
+            inverted_dict[original_dict[key]] = key
     return inverted_dict
 
 

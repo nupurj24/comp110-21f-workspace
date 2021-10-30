@@ -2,8 +2,15 @@
 
 # TODO: Uncomment the below line when ready to write unit tests
 from exercises.ex06.dictionaries import invert, favorite_color, count
-
+import pytest 
 __author__ = "730391424"
+
+
+def test_invert_multiple_keys() -> None:
+    """Raise Error."""
+    with pytest.raises(KeyError):
+        original_dict = {"a": "b", "c": "b"}
+        invert(original_dict)
 
 
 def test_invert_basic_dictionary() -> None:
