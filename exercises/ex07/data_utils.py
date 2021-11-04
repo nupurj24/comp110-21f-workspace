@@ -65,7 +65,8 @@ def concat(column_table_1: (dict[str, list[str]]), column_table_2: dict[str, lis
     for column in column_table_2:
         if column in result:
             result[column] = column_table_2[column]
-        result[column] = column_table_2[column]
+        else:
+            result[column] = column_table_2[column]
     return result 
 
 
