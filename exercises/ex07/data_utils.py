@@ -43,10 +43,9 @@ def head(column_table: dict[str, list[str]], n: int) -> dict[str, list[str]]:
         list_of_n: list[str] = []
         i: int = 0
         while i < n:
-            list_of_n.append(column)
+            list_of_n.append(column_table[column][i])
             i += 1
-        for item in list_of_n:
-            result[item] = list_of_n
+        result[column] = list_of_n
     return result 
 
 
@@ -65,7 +64,7 @@ def concat(column_table_1: (dict[str, list[str]]), column_table_2: dict[str, lis
         result[column] = column_table_1[column]
     for column in column_table_2:
         if column in result:
-            result[column] += column_table_2[column]
+            result[column] = column_table_2[column]
         result[column] = column_table_2[column]
     return result 
 
@@ -76,5 +75,6 @@ def count(input_list: list[str]) -> dict[str, int]:
     for current_value in input_list:
         if current_value in result:
             result[current_value] += 1
-        result[current_value] = 1
+        else:
+            result[current_value] = 1
     return result 
